@@ -1,0 +1,13 @@
+.curriculum-grid-row:after {
+  content: "";
+  display: "table";
+  clear: "both";
+  width: "100%";
+  height: "100%";
+  padding: "10px";
+}
+
+/* display: "grid",
+    gridTemplateColumns: "auto auto auto",
+    backgroundColor: #2196F3;
+    padding: 10px; */

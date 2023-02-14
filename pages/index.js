@@ -1,7 +1,25 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
 export default function Home() {
+  return (
+    <Layout home>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <section className={utilStyles.headingMd}>
+        <p>Hahahah a dumb guy</p>
+        <h2>
+          <Link href="/profile/curriculum">Curriculum Vitae</Link>
+        </h2>
+      </section>
+    </Layout>
+  );
+}
+
+/* export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -10,8 +28,15 @@ export default function Home() {
       </Head>
 
       <main>
+        <Image
+          src="/images/profile.jpg"
+          width={124}
+          height={164}
+          alt="Gabriel Castor"
+        />
+
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Read <Link href="/posts/first-post">this page!</Link>
         </h1>
 
         <p className={styles.description}>
@@ -55,7 +80,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
       </footer>
@@ -111,5 +136,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
-}
+  );
+} */
