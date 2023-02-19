@@ -9,11 +9,11 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hahahah a dumb guy</p>
-        <h2>
-          <Link href="/profile/curriculum">Curriculum Vitae</Link>
-        </h2>
+      <section className={utilStyles.headingMd} style={{textAlign: "center"}}>
+        <p>Hello, this is my website!</p>
+        <h4>
+          <Link href="/profile/curriculum">And here is my Curriculum Vitae</Link>
+        </h4>
       </section>
     </Layout>
   );
