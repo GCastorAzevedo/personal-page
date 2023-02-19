@@ -12,7 +12,7 @@ export default function Document() {
         />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto"
+          href="https://fonts.googleapis.com/css?family=Roboto&display=optional"
         />
         <link
           rel="stylesheet"
