@@ -75,6 +75,10 @@ export default function Curriculum() {
           padding: 20px 24px 0px 32px;
           background-color: #fff;
         }
+        .left-column {
+          padding: 20px 24px 20px 24px;
+          background-color: inherit;
+        }
       `}</style>
     </>
   );

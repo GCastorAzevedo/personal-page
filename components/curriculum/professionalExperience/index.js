@@ -13,7 +13,7 @@ function ProfessionalExperienceItem({
       <ItemHeader
         {...{ startDate, endDate, current, role, institution: company }}
       />
-      <ul style={{ margin: "3.5px" }}>
+      <ul style={{ margin: 0, padding: "3.5px 3.5px 0px 3.5px", listStylePosition: "inside" }}>
         {content.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
@@ -28,12 +28,13 @@ export default function ProfessionalExperience({ data }) {
   return (
     <div className="right-column">
       <h2
+        className="color-text-violet"
         style={{
           padding: 0,
           margin: 0,
         }}
       >
-        Professional Experience
+        <b>Professional Experience</b>
       </h2>
       {data.items.map((item, index) => (
         <ProfessionalExperienceItem {...item} key={index} />

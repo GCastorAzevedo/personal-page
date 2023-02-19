@@ -8,30 +8,35 @@ import ParentSize from "@visx/responsive/lib/components/ParentSize";
 
 export default function Programming({ data }) {
   return (
-    <div
-      style={{
-        maxWidth: "500px",
-        height: "300px",
-        padding: "4px",
-        margin: "16px 10px 16px 10px",
-        boxSizing: "border-box",
-      }}
-    >
-      <ParentSize>
-        {({ width, height }) => (
-          <ProgrammingDonutChart
-            width={width}
-            height={height}
-            data={data}
-            margin={{
-              top: 20,
-              right: 14,
-              bottom: 20,
-              left: 14,
-            }}
-          />
-        )}
-      </ParentSize>
+    <div className="left-column">
+      <h4 className="color-text-violet">
+        <b>Programming</b>
+      </h4>
+      <div
+        style={{
+          maxWidth: "500px",
+          height: "300px",
+          padding: 0,
+          margin: 0,
+          boxSizing: "border-box",
+        }}
+      >
+        <ParentSize>
+          {({ width, height }) => (
+            <ProgrammingDonutChart
+              width={width}
+              height={height}
+              data={data}
+              margin={{
+                top: 20,
+                right: 14,
+                bottom: 20,
+                left: 14,
+              }}
+            />
+          )}
+        </ParentSize>
+      </div>
     </div>
   );
 }

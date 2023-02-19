@@ -1,26 +1,14 @@
-import TopicBar from "../topicBar";
-import Example from "./bubbleChart";
+import SkillsChart from "./bubbleChart";
 
 export default function Skills({ data }) {
   return (
-    <div style={{ padding: "4px", margin: "16px 10px 16px 10px" }}>
+    <div className="left-column">
       <div>
-        <p>
+        <h4 className="color-text-violet">
           <b>Skills</b>
-        </p>
+        </h4>
       </div>
-      <div>
-        <Example />
-      </div>
-      <div>
-        {data.items.map((item, index) => (
-          <TopicBar
-            topic={item.skill}
-            percentage={item.percentage}
-            key={index}
-          />
-        ))}
-      </div>
+      <SkillsChart data={data} />
     </div>
   );
 }

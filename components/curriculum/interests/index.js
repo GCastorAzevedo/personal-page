@@ -2,11 +2,11 @@ import TopicBar from "../topicBar";
 
 export default function Interests({ data }) {
   return (
-    <div style={{ padding: "4px", margin: "16px 10px 16px 10px" }}>
+    <div className="left-column">
       <div>
-        <p>
+        <h4 className="color-text-violet">
           <b>Interests</b>
-        </p>
+        </h4>
       </div>
       <div>
         {data.items.map((item, index) => (
