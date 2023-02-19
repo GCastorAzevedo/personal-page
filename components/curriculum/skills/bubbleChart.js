@@ -61,7 +61,7 @@ export function BubbleChart({ data, width, height, margin = defaultMargin }) {
             const cx = centerX + radius * Math.cos(angle) || item.cx;
             const cy = centerY + radius * Math.sin(angle) || item.cy;
             return (
-              <Group>
+              <Group key={index}>
                 <circle
                   key={index}
                   r={item.radius}
@@ -83,6 +83,7 @@ export function BubbleChart({ data, width, height, margin = defaultMargin }) {
                         textAnchor="middle"
                         // dy={.5}
                         // dx={.5}
+                        key={index}
                       >
                         {t}
                       </text>
