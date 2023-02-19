@@ -1,11 +1,11 @@
 export default function TopicBar({ topic, percentage, display = false }) {
   return (
-    <div style={{ margin: 4 }}>
-      <p style={{ margin: 2 }}>{topic}</p>
+    <div style={{ margin: 0 }}>
+      <p style={{ margin: 0 }}>{topic}</p>
       <div
         className="color-dark-grey"
         style={{
-          margin: 2,
+          margin: 0,
           borderRadius: "2px",
           fontSize: "12px!important",
         }}
