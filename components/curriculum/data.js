@@ -28,10 +28,10 @@ export const curriculumData = {
           {
             icon: (
               <i
-                class="fa fa-envelope-o color-text-violet"
+                className="fa fa-envelope-o color-text-violet"
                 aria-hidden="true"
               ></i>
-            ), // <i class="fa fa-envelope color-text-violet" aria-hidden="true"></i>,
+            ), // <i className="fa fa-envelope color-text-violet" aria-hidden="true"></i>,
             content: "gabrielcastor1991@gmail.com",
           },
           {
@@ -40,7 +40,7 @@ export const curriculumData = {
           },
           {
             icon: (
-              <i class="fa fa-github color-text-violet" aria-hidden="true"></i>
+              <i className="fa fa-github color-text-violet" aria-hidden="true"></i>
             ),
             content: "https://github.com/GCastorAzevedo",
           },
