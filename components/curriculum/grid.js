@@ -5,6 +5,7 @@ export function GridHorizontal({ children }) {
     <div
       style={{
         padding: "10px",
+        height: "100%"
       }}
       className={styles.curriculumGridRow}
     >
